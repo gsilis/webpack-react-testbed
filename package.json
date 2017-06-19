@@ -4,8 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "serve": "serve ./dist"
+    "dev": "NODE_ENV=development ./node_modules/.bin/webpack-dev-server --progress --color --hot --host 0.0.0.0 --port 9000 --config ./webpack.config.js"
   },
   "author": "",
   "license": "ISC",
@@ -19,7 +18,7 @@
     "babel-preset-es2016": "^6.24.1",
     "babel-preset-react": "^6.24.1",
     "npm-tasks": "^1.4.4",
-    "serve": "^5.2.2",
-    "webpack": "^2.6.1"
+    "webpack": "^2.6.1",
+    "webpack-dev-server": "^2.4.5"
   }
 }
