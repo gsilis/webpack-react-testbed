@@ -5,7 +5,7 @@ var APP_DIR = path.resolve(__dirname, 'src/');
 var DIST_DIR = path.resolve(__dirname, 'dist/app/');
 
 module.exports = {
-  entry: APP_DIR + '/main.js',
+  entry: APP_DIR + '/main.jsx',
   output: {
     path: DIST_DIR,
     filename: './bundle.js',
@@ -32,5 +32,8 @@ module.exports = {
       path.resolve(__dirname, 'src/components')
     ],
     extensions: ['.js', '.json', '.jsx'],
+  },
+  devServer: {
+    contentBase: path.join(__dirname, 'dist'),
   }
 };
